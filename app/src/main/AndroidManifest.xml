@@ -16,6 +16,20 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-    </application>
+        <activity android:name="com.binish.apptutorial.animations.AnimationSampleActivity" />
 
+        <activity android:name="com.binish.apptutorial.MemoryManagementTesting" />
+
+        <activity android:name="com.binish.apptutorial.SingleShotActivity" />
+
+        <activity android:name="com.binish.apptutorial.CustomTextActivity" />
+
+        <activity android:name="com.binish.apptutorial.CustomShowcaseActivity" />
+
+        <activity android:name="com.binish.apptutorial.ActionItemsSampleActivity" />
+
+        <activity android:name="com.binish.apptutorial.EventsActivity" />
+
+        <activity android:name="com.binish.apptutorial.FragmentDemoActivity" />
+    </application>
 </manifest>
