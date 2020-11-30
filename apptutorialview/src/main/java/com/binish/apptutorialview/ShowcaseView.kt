@@ -74,7 +74,7 @@ class ShowcaseView protected constructor(
     // Animation items
     private var fadeInMillis: Long
     private var fadeOutMillis: Long
-    private var isShowing = false
+    override var isShowing = false
     private var backgroundColorShowCase = 0
     private var showcaseColor = 0
     private var blockAllTouches = false
@@ -342,12 +342,12 @@ class ShowcaseView protected constructor(
         visibility = View.GONE
     }
 
-    override fun setContentTitle(title: CharSequence) {
+    override fun setContentTitle(title: CharSequence?) {
         textDrawer.setContentTitle(title)
         invalidate()
     }
 
-    override fun setContentText(text: CharSequence) {
+    override fun setContentText(text: CharSequence?) {
         textDrawer.setContentText(text)
         invalidate()
     }
@@ -661,7 +661,7 @@ class ShowcaseView protected constructor(
      * @param layoutParams a [LayoutParams] representing
      * the new position of the button
      */
-    override fun setButtonPosition(layoutParams: RelativeLayout.LayoutParams) {
+    override fun setButtonPosition(layoutParams: RelativeLayout.LayoutParams?) {
         mEndButton!!.layoutParams = layoutParams
     }
 
@@ -669,7 +669,7 @@ class ShowcaseView protected constructor(
      * Sets the text alignment of the detail text
      */
     fun setDetailTextAlignment(textAlignment: Layout.Alignment?) {
-        textDrawer.setDetailTextAlignment(textAlignment)
+        textDrawer.setDetailTextAlignment(textAlignment!!)
         hasAlteredText = true
         invalidate()
     }
@@ -678,7 +678,7 @@ class ShowcaseView protected constructor(
      * Sets the text alignment of the title text
      */
     fun setTitleTextAlignment(textAlignment: Layout.Alignment?) {
-        textDrawer.setTitleTextAlignment(textAlignment)
+        textDrawer.setTitleTextAlignment(textAlignment!!)
         hasAlteredText = true
         invalidate()
     }
@@ -723,7 +723,7 @@ class ShowcaseView protected constructor(
         updateStyle(array, true)
     }
 
-    override fun isShowing(): Boolean {
+    override fun isShown(): Boolean {
         return isShowing
     }
 
