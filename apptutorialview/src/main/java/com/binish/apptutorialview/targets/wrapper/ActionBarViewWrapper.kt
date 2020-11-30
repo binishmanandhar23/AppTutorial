@@ -1,4 +1,4 @@
-package com.binish.apptutorial.targets.wrapper
+package com.binish.apptutorialview.targets.wrapper
 
 import android.util.Log
 import android.view.View

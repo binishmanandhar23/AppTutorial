@@ -3,7 +3,7 @@ package com.binish.apptutorial.targets.reflectors
 import android.app.Activity
 import android.view.View
 import android.view.ViewParent
-import com.binish.apptutorial.R
+import com.binish.apptutorialview.R
 
 
 /**
