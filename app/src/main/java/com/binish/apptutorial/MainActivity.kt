@@ -41,8 +41,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener, OnShowcaseEventL
     var listView: ListView? = null
     public override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        supportActionBar?.hide()
         setContentView(R.layout.main)
-        setSupportActionBar(findViewById<View>(R.id.toolbar) as Toolbar)
+//        setSupportActionBar(findViewById(R.id.toolbar))
         val adapter = HardcodedListAdapter(this)
         listView = findViewById<View>(R.id.listView) as ListView
         listView!!.adapter = adapter
