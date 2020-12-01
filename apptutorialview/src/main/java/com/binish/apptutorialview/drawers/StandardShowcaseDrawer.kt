@@ -13,12 +13,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.binish.apptutorialview
+package com.binish.apptutorialview.drawers
 
 import android.content.res.Resources
 import android.graphics.*
 import android.graphics.drawable.Drawable
 import androidx.core.content.res.ResourcesCompat
+import com.binish.apptutorialview.R
 
 
 open class StandardShowcaseDrawer(resources: Resources, theme: Resources.Theme?) : ShowcaseDrawer {

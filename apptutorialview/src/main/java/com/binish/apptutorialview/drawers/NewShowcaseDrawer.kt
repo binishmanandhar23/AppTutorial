@@ -13,12 +13,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.binish.apptutorialview
+package com.binish.apptutorialview.drawers
 
 import android.content.res.Resources
 import android.content.res.Resources.Theme
 import android.graphics.Bitmap
 import android.graphics.Canvas
+import com.binish.apptutorialview.R
 
 class NewShowcaseDrawer(resources: Resources, theme: Theme?) : StandardShowcaseDrawer(resources, theme) {
     private val outerRadius: Float = resources.getDimension(R.dimen.showcase_radius_outer)

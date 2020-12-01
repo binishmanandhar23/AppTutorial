@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.binish.apptutorialview
+package com.binish.apptutorialview.drawers
 
 import android.content.Context
 import android.content.res.Resources
@@ -22,6 +22,8 @@ import android.graphics.Rect
 import android.text.*
 import android.text.style.MetricAffectingSpan
 import android.text.style.TextAppearanceSpan
+import com.binish.apptutorialview.R
+import com.binish.apptutorialview.ShowcaseView
 import com.binish.apptutorialview.ShowcaseView.TextPosition
 
 /**

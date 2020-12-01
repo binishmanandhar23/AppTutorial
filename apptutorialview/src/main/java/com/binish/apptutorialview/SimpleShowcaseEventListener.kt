@@ -6,7 +6,7 @@ import android.view.MotionEvent
  * Basic implementation of [OnShowcaseEventListener] which does nothing
  * for each event, but can be override for each one.
  */
-class SimpleShowcaseEventListener : OnShowcaseEventListener {
+open class SimpleShowcaseEventListener : OnShowcaseEventListener {
     override fun onShowcaseViewHide(showcaseView: ShowcaseView?) {
         // Override to do stuff
     }

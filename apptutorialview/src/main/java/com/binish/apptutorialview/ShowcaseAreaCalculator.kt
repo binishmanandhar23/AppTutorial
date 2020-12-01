@@ -17,6 +17,7 @@ package com.binish.apptutorialview
 
 import android.graphics.Rect
 import android.util.Log
+import com.binish.apptutorialview.drawers.ShowcaseDrawer
 
 /**
  * Class responsible for calculating where the Showcase should position itself

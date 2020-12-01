@@ -31,6 +31,8 @@ import android.widget.Button
 import android.widget.RelativeLayout
 import androidx.annotation.IntDef
 import com.binish.apptutorial.targets.Target
+import com.binish.apptutorialview.drawers.*
+import com.binish.apptutorialview.drawers.TextDrawer
 import java.lang.annotation.Retention
 import java.lang.annotation.RetentionPolicy
 import kotlin.math.pow
@@ -90,7 +92,7 @@ class ShowcaseView protected constructor(
     private fun init() {
         setOnTouchListener(this)
         if (mEndButton!!.parent == null) {
-            val margin = resources.getDimension(R.dimen.button_margin) as Int
+            val margin = resources.getDimension(R.dimen.button_margin).toInt()
             val lps: RelativeLayout.LayoutParams =
                 generateDefaultLayoutParams() as RelativeLayout.LayoutParams
             lps.addRule(RelativeLayout.ALIGN_PARENT_BOTTOM)

@@ -1,7 +1,8 @@
-package com.binish.apptutorialview
+package com.binish.apptutorialview.drawers
 
 import android.content.res.Resources
 import android.graphics.*
+import com.binish.apptutorialview.R
 
 class MaterialShowcaseDrawer(resources: Resources) : ShowcaseDrawer {
     private var radius: Float = 0f
